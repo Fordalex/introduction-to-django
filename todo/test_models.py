@@ -13,7 +13,10 @@ class TestItemModel(TestCase):
         item.save()
         self.assertEqual(item.name, "Create a Test")
         self.assertTrue(item.done)
+<<<<<<< HEAD
 
     def test_item_as_a_string(self):
         item = Item(name="Create a Test")
         self.assertEqual("Create a Test", str(item))
+=======
+>>>>>>> 370bbe4c4d5e304070df9daeaf0de4fef570f7aa

@@ -1,5 +1,8 @@
 from django.test import TestCase
+<<<<<<< HEAD
 from django.shortcuts import get_object_or_404
+=======
+>>>>>>> 370bbe4c4d5e304070df9daeaf0de4fef570f7aa
 from .models import Item
 
 class TestViews(TestCase):
@@ -22,6 +25,7 @@ class TestViews(TestCase):
 
     def test_get_edit_page_for_item_that_does_not_exist(self):
         page = self.client.get("/edit/1")
+<<<<<<< HEAD
         self.assertEqual(page.status_code, 404)
 
     def test_post_create_an_item(self):
@@ -46,3 +50,6 @@ class TestViews(TestCase):
 
         item = get_object_or_404(Item, pk=id)
         self.assertEqual(item.done, True)
+=======
+        self.assertEqual(page.status_code, 404)
+>>>>>>> 370bbe4c4d5e304070df9daeaf0de4fef570f7aa

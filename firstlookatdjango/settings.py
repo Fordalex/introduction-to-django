@@ -27,8 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8080-dbaafbdd-aa76-4891-8aa7-14cdbb2efcf3.ws-eu01.gitpod.io',
+<<<<<<< HEAD
     'localhost',
     '127.0.0.1'
+=======
+    'localhost'
+>>>>>>> 370bbe4c4d5e304070df9daeaf0de4fef570f7aa
 ]
 
 
