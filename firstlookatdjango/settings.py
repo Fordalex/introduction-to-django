@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,12 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8080-dbaafbdd-aa76-4891-8aa7-14cdbb2efcf3.ws-eu01.gitpod.io',
-<<<<<<< HEAD
     'localhost',
-    '127.0.0.1'
-=======
+    '127.0.0.1',
     'localhost'
->>>>>>> 370bbe4c4d5e304070df9daeaf0de4fef570f7aa
 ]
 
 
@@ -82,11 +80,15 @@ WSGI_APPLICATION = 'firstlookatdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse("postgres://ypxcrjuoezqynm:9e2a9855eef726236d7959b001604f8e5bad4fb0661515190f522eb6aad27b27@ec2-46-137-177-160.eu-west-1.compute.amazonaws.com:5432/d72sjba6p12c7q")
 }
 
 
