@@ -30,7 +30,8 @@ ALLOWED_HOSTS = [
     '8080-dbaafbdd-aa76-4891-8aa7-14cdbb2efcf3.ws-eu01.gitpod.io',
     'localhost',
     '127.0.0.1',
-    'localhost'
+    'localhost',
+    'todo-codeinstitute.herokuapp.com'
 ]
 
 
